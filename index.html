@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Drop Game</title>
+    <link rel="stylesheet" href="Style.CSS">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div id="start-page">
+        <h1>Welcome to the Pin Drop Game</h1>
+        <p>Find the landmarks on the Oakland University campus by clicking on the map to place a pin. Try to be as close as possible to the landmark to score points.</p>
+        <img src="Image1.png" alt="Click on the map to place a pin" class="tutorial-image">
+        <img src="Image2.png" alt="Score based on proximity to the landmark" class="tutorial-image">
+        <button id="start-button">Start Game</button>
+    </div>
+    <div id="map"></div>
+    <div id="info">
+        <h2>Find: <span id="landmark"></span></h2>
+        <p>Score: <span id="score">0</span></p>
+    </div>
+    <div id="final-page">
+        <h1>Game Over!</h1>
+        <p>Your Total Score: <span id="total-score">0</span></p>
+        <button id="restart-button">Play Again</button>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
